@@ -9,6 +9,7 @@
 #import "ViewController.h"
 @import MobileCenterAnalytics;
 @import MobileCenterCrashes;
+@import Mobile;
 
 
 @interface ViewController ()
@@ -28,9 +29,9 @@
     [_lblVersionNumber setText:version];
     [_lblBuildNumber setText:buildNumber];
 
-    //NSUUID *installId = [MSMobileCenter  installId];
-    //NSString *installIdString = [installId UUIDString];
-    //[_lblInstallID setText:installIdString];
+    NSUUID *installId = [MSMobileCenter  installId];
+    NSString *installIdString = [installId UUIDString];
+    [_lblInstallID setText:installIdString];
     
 }
 
