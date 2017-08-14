@@ -9,7 +9,7 @@
 #import "ViewController.h"
 @import MobileCenterAnalytics;
 @import MobileCenterCrashes;
-@import Mobile;
+@import MobileCenter;
 
 
 @interface ViewController ()
