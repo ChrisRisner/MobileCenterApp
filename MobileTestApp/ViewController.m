@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 @import MobileCenterAnalytics;
+@import MobileCenterCrashes;
 
 
 @interface ViewController ()
@@ -50,8 +51,8 @@
 }
 
 - (IBAction)tappedriggerCrash:(id)sender {
-    //[MSCrashes generateTestCrash];
-    @throw NSInternalInconsistencyException;
+    [MSCrashes generateTestCrash];
+    //@throw NSInternalInconsistencyException;
 }
 
 @end
