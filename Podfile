@@ -8,6 +8,7 @@ target 'MobileTestApp' do
   # Pods for MobileTestApp
 
   pod 'MobileCenter'
+  pod 'MobileCenter/Distribute'
 
   target 'MobileTestAppTests' do
     inherit! :search_paths

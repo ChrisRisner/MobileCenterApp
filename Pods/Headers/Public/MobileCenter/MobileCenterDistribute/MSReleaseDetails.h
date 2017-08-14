@@ -1,0 +1,1 @@
+../../../../MobileCenter/MobileCenter-SDK-iOS/MobileCenterDistribute.framework/Headers/MSReleaseDetails.h
