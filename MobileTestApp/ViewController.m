@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import MobileCenterAnalytics;
 
 
 @interface ViewController ()
@@ -39,9 +40,12 @@
 }
 - (IBAction)tappedTriggerCustomEvent:(id)sender {
     NSLog(@"tappedTriggerCustomEvent");
+    [MSAnalytics trackEvent:@"Button clicked"];
 }
 - (IBAction)tappedTriggerEventWIthProperties:(id)sender {
     NSLog(@"tappedTriggerCustomEventWithProperties");
+    NSDictionary *properties = @{@"Category" : @"Buttons", @"Button Position" : @"2nd"};
+    [MSAnalytics trackEvent:@"Button clicked" withProperties: properties];
     
 }
 
