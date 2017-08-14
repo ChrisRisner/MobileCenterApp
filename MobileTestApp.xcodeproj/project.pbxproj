@@ -208,7 +208,7 @@
 					836A1BA91F4221B300DD99A1 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5A8Q2C9N2W;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					836A1BC21F4221B300DD99A1 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -430,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5A8Q2C9N2W;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MobileTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cr.MobileTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fb420e0f-23bb-44cb-bf7e-85bb552f1ea1";
+				PROVISIONING_PROFILE_SPECIFIER = TestAppProfile;
 			};
 			name = Debug;
 		};
@@ -441,11 +444,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5A8Q2C9N2W;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MobileTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cr.MobileTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cbc9433b-2233-4420-8ccc-f75456fdca20";
+				PROVISIONING_PROFILE_SPECIFIER = TestAppDist;
 			};
 			name = Release;
 		};
@@ -518,6 +525,7 @@
 				836A1BD91F4221B300DD99A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836A1BDA1F4221B300DD99A1 /* Build configuration list for PBXNativeTarget "MobileTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				836A1BDC1F4221B300DD99A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836A1BDD1F4221B300DD99A1 /* Build configuration list for PBXNativeTarget "MobileTestAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +543,7 @@
 				836A1BDF1F4221B300DD99A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
