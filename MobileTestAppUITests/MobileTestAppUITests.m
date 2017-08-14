@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
+
 
 @interface MobileTestAppUITests : XCTestCase
 
@@ -36,7 +38,7 @@
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
     
-    //[MCLabel label:@"testExample"];
+    [MCLabel label:@"testExample"];
     [app.buttons[@"Trigger Custom Event"] tap];
     [app.buttons[@"Trigger Event w/ Props"] tap];
     
@@ -44,7 +46,7 @@
 
 - (void)testCustomEventButton {
     
-    //[MCLabel label:@"testCustomEventButton"];
+    [MCLabel label:@"testCustomEventButton"];
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app.buttons[@"Trigger Custom Event"] tap];
 }
@@ -59,7 +61,7 @@
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app.buttons[@"Trigger Crash"] tap];
     [app.buttons[@"Trigger Crash"] tap];
-    //[MCLabel label:@"After clicking crash button"];
+    [MCLabel label:@"After clicking crash button"];
 }
 
 @end

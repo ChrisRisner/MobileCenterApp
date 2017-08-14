@@ -18,6 +18,7 @@ target 'MobileTestApp' do
   target 'MobileTestAppUITests' do
     inherit! :search_paths
     # Pods for testing
+   pod 'VSMobileCenterExtensions'
   end
 
 end
