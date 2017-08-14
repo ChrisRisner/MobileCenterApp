@@ -33,8 +33,33 @@
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    
+    //[MCLabel label:@"testExample"];
+    [app.buttons[@"Trigger Custom Event"] tap];
+    [app.buttons[@"Trigger Event w/ Props"] tap];
+    
+}
+
+- (void)testCustomEventButton {
+    
+    //[MCLabel label:@"testCustomEventButton"];
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Trigger Custom Event"] tap];
+}
+
+- (void)testEventWithProperties {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Trigger Event w/ Props"] tap];
+}
+
+- (void)testCrashButton {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"Trigger Crash"] tap];
+    [app.buttons[@"Trigger Crash"] tap];
+    //[MCLabel label:@"After clicking crash button"];
 }
 
 @end
