@@ -41,9 +41,9 @@ jobs:
         open -a safari http://www.example.com
         if [ -d /Applications/Safari.app ] ; then
             RESULT=$( sudo defaults read /Applications/Safari.app/Contents/Info CFBundleVersion )
-            echo "<result>$RESULT</result>"
+            echo "$RESULT"
         else
-            echo "<result>Not Installed</result>"
+            echo "Not Installed"
         fi
         
         
